@@ -23,15 +23,19 @@
 </head>
 
 <body>
-   <div id="counter" class="blink">0</div>
-   <button id="btnPlus">
-     ++++++
+   <div id="counter" class="blink">
+        <label for="qty"><abbr title="Current value">Current value: </abbr></label>
+        <input id="qty" value="0" />
+   <br/>  
+   <button id="btnPlus" onclick="modify_value(1)">
+     UP
   </button><br/>
-   <button id="btnMinus">
-     ------
+   <button id="btnMinus" onclick="modify_value(-1)">
+     DOWN
   </button>  
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+  </div>     
  <!--   <script type="text/javascript">
         app.initialize();
     </script>
